@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.scoreBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (min-width: 980px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        margin: 20px;
+        padding: 0;
+    }
+
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        margin: 0px;
+        padding: 0;
+    }
+
+    .card > img {
+        width: 100px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(126, 124, 124);
+    transition: all 0.1s ease;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.card:hover {
+    border-color: black;
+    box-shadow: 5px 5px 5px;
+}
+
+.score, .highScore {
+    font-size: 1.3rem;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: 500;
+    background: #fff;
+    border: none;
+    color: #000;
+    transition: padding 0.2s ease-in-out;
+}
+
+button:hover {
+    border: 1px solid rgb(46, 115, 204);
+    padding: 12px;
+}
